@@ -1,0 +1,86 @@
+.App {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #140d00;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: aquamarine;
+  margin-top: 30px;
+  font-family: "Black Ops one";
+  font-size: 3rem;
+  text-shadow: 3px 2px 5px purple;
+}
+
+.board {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(56, 56, 53, 0.418);
+  border: 1px solid aquamarine;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.486);
+}
+.row {
+  flex: 33%;
+  display: flex;
+
+  flex-direction: row;
+}
+.square {
+  flex: 33%;
+  height: 100%;
+  border: 1px solid aquamarine;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  color: aquamarine;
+  font-family: "Black Ops one";
+  transition: transform 0.2s;
+}
+.square:active {
+  background-color: #a5b1ad;
+}
+.square:hover {
+  background-color: rgb(37, 77, 63);
+  transform: scale(1.1);
+}
+
+.winner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: aquamarine;
+  font-family: "Black Ops one";
+  text-shadow: 3px 2px 5px purple;
+  margin-right: 30px;
+  margin: 0;
+  padding: 0;
+}
+.reset {
+  color: aquamarine;
+  border: 2px solid aquamarine;
+  background-color: rgba(56, 56, 53, 0.418);
+  transition-duration: 0.4s;
+  font-family: "Black Ops one";
+}
+.reset:hover {
+  background-color: rgb(37, 77, 63);
+}
+.flexbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
